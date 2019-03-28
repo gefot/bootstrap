@@ -35,22 +35,55 @@
                 <div class="col-xl-2 col-lg-3 col-md-4 sidebar fixed-top">
                     <span href="#" class="navbar-brand text-white d-block mx-auto text-center py-3 mb-4 brand-bottom-border">Anemo NMS</span>
                     <ul class="navbar-nav flex-column">
+
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link text-white sidebar-link-current"><i class="fas fa-clipboard-list text-light mr-3"></i>Dashboard</a>
                         </li>
+
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link text-white sidebar-link"><i class="fas fa-network-wired text-light mr-2"></i>Networking</a>
+                            <a href="#" class="nav-link text-white sidebar-link" data-toggle="collapse" data-target="#submenu-net" aria-expanded="false" aria-controls="submenu-net">
+                                <i class="fas fa-network-wired text-light mr-2"></i>Networking<i class="fa fa-caret-down"></i>
+                            </a>
+                            <div id="submenu-net" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item ml-4">
+                                        <a class="nav-link text-white sidebar-link" href="#">Device Info</a>
+                                    </li>
+                                    <li class="nav-item ml-4">
+                                        <a class="nav-link text-white sidebar-link" href="#">CDP Info</a>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
+
                         <li class="nav-item mb-2">
-                            <a href="#" class="nav-link text-white sidebar-link"><i class="fas fa-phone text-light mr-3"></i>VoIP</a>
+                            <a href="#" class="nav-link text-white sidebar-link" data-toggle="collapse" data-target="#submenu-voip" aria-expanded="false" aria-controls="submenu-voip">
+                                <i class="fas fa-phone text-light mr-2"></i>VoIP<i class="fa fa-caret-down"></i>
+                            </a>
+                            <div id="submenu-voip" class="collapse submenu" style="">
+                                <ul class="nav flex-column">
+                                    <li class="nav-item ml-4">
+                                        <a class="nav-link text-white sidebar-link" href="#">Config Info</a>
+                                    </li>
+                                    <li class="nav-item ml-4">
+                                        <a class="nav-link text-white sidebar-link" href="#">Registration Info</a>
+                                    </li>
+                                </ul>
+
+                            </div>
                         </li>
+
                         <li class="nav-item mb-2">
                             <a href="#" class="nav-link text-white sidebar-link"><i class="fas fa-signal text-light mr-2"></i>Wireless</a>
                         </li>
 
+
+
                     </ul>
                 </div>
                 <!--End of Sidebar-->
+
+
                 <!--Topbar-->
                 <div class="col-xl-10 col-lg-9 col-md-8 topbar ml-auto py-2 fixed-top">
                     <div class="row align-items-center">
@@ -61,14 +94,17 @@
                             <form>
                                 <div class="input-group">
                                     <input type="text" class="form-control topbar-search-input" placeholder="Search...">
-                                    <button type="button" class="btn topbar-search-button btn-dark" data-toggle="modal" data-target="#todo-message"><i class="fas fa-search"></i></button>
+                                    <button type="button" class="btn topbar-search-button btn-dark" data-toggle="modal" data-target="#todo-message"><i class="fas fa-search"></i>
+                                    </button>
                                 </div>
                             </form>
                         </div>
                         <div class="col-md-3">
                             <ul class="navbar-nav">
-                                <li class="nav-item mx-2 ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#todo-message"><i class="fas fa-user text-bark"></i></a></li>
-                                <li class="nav-item mx-2"><a href="#" class="nav-link" data-toggle="modal" data-target="#todo-message"><i class="fas fa-sign-in-alt text-danger"></i></a></li>
+                                <li class="nav-item mx-2 ml-md-auto"><a href="#" class="nav-link" data-toggle="modal" data-target="#todo-message"><i
+                                        class="fas fa-user text-bark"></i></a></li>
+                                <li class="nav-item mx-2"><a href="#" class="nav-link" data-toggle="modal" data-target="#todo-message"><i
+                                        class="fas fa-sign-in-alt text-danger"></i></a></li>
                             </ul>
                         </div>
                     </div>
@@ -95,7 +131,7 @@
 
 <!--body-->
 <div class="container">
-    <!--<h1>This is Body!</h1>-->
+    <h1>This is Body!</h1>
 </div>
 <!--end of body-->
 
